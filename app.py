@@ -17,7 +17,7 @@ def sign_up():
     app.users[app.id_count] = new_user
     app.id_count            = app.id_count + 1
 
-    return jsonfy(new_user)
+    return jsonify(new_user)
 
 @app.route('/tweet', methods=['POST'])
 def tweet():
